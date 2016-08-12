@@ -1,0 +1,29 @@
+{
+    "name": "node-red-contrib-nuimo",
+    "version": "0.0.1",
+    "description": "A Node-RED node that uses Noble to interact with Nuimo devices",
+    "dependencies": {
+        "nuimojs": "averelll/nuimojs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/averelll/node-red-contrib-nuimo.git"
+    },
+    "license": "Apache-2.0",
+    "keywords": [
+        "node-red",
+        "bluetooth",
+        "ble",
+        "nuimo"
+    ],
+    "node-red": {
+        "nodes": {
+            "nuimo": "nuimo.js"
+        }
+    },
+    "author": "Ferd Scheepers",
+    "bugs": {
+        "url": "https://github.com/averelll/node-red-contrib-nuimo/issues"
+    },
+    "homepage": "https://github.com/averelll/node-red-contrib-nuimo#readme"
+}
