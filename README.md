@@ -10,7 +10,7 @@ A [Node-RED](http://nodered.org/) node that uses the Noble to interact with Nuim
 
 ```sh
 cd $HOME/.node-red
-npm install averelll/node-red-contrib-nuimo
+npm install nikwest/node-red-contrib-nuimo
 ```
 ``
 
