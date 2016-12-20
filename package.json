@@ -3,11 +3,11 @@
     "version": "0.0.1",
     "description": "A Node-RED node that uses Noble to interact with Nuimo devices",
     "dependencies": {
-        "nuimojs": "averelll/nuimojs"
+        "nuimojs": "nathankunicki/nuimojs"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/averelll/node-red-contrib-nuimo.git"
+        "url": "git+https://github.com/nikwest/node-red-contrib-nuimo.git"
     },
     "license": "Apache-2.0",
     "keywords": [

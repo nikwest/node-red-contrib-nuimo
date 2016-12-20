@@ -1,5 +1,6 @@
 module.exports = function(RED) {
-    var noble = require('nuimojs');
+    let Nuimo = require('nuimojs'),
+    nuimo = new Nuimo();
 
     function NuimoNode(config) {
         RED.nodes.createNode(this, config);
@@ -35,6 +36,12 @@ module.exports = function(RED) {
                     0, 0, 0, 0, 0, 0, 0, 0, 0
                 ], 255, 2000);
             });
+                 
+            device.on("rotate", (amount) => {
+                //node.warn(`Rotated by ${amount}`);
+                      var msg = { topic:"rotate", payload:amount }
+                this.send(msg);
+            });
 
             device.connect();
 
@@ -45,5 +52,5 @@ module.exports = function(RED) {
 
     }
 
-    RED.nodes.registerType("ble uart", BleUartNode);
+    RED.nodes.registerType("nuimo", NuimoNode);
 }
